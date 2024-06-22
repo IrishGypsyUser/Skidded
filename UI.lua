@@ -1027,13 +1027,13 @@ library.createList = function(option, parent)
 
 		if self.multiselect then
             self.value[value] = state
-			if not table.find(self.values, value) then
+			
 				table.insert(self.values, value)
-			end
+			
 		else
-			if not table.find(self.values, value) then
+			
 				table.insert(self.values, value)
-			end
+			
 		end
 
 		local label = library:Create("TextLabel", {
